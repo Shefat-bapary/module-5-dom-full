@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event .........</title>
+</head>
+<body>
+    <h1 onclick="console.log('header is clicked......44444')">We are start Dom Event........</h1>
+    <button onclick="console.log(55)">clack me</button>
+
+
+    <!-- opsition 1 -->
+    <button onclick="document.body.style.backgroundColor='red'">make bg red full body</button>
+
+
+    <!-- opsition 12 -->
+    <button onclick="makeRed()">make color red full body></button>
+
+
+    
+
+    <!-- opsition 1+2 -->
+    <button id="make-blue">Make blue ....</button>
+
+    
+    <!-- Js file  -->
+    <script src="event.js"></script>
+    <script>
+    //    const makeBlueBtn = document.getElementById('make-blue');
+    //    makeBlueBtn.onclick = function makeBlue(){
+    //     document.body.style.backgroundColor='blue';
+    //    };
+    //    2end 
+       const makeBlueBtn = document.getElementById('make-blue');
+       makeBlueBtn.onclick = makeBlue; // akanay () use kora gabha na use korlay autu code execute hoya gabha
+       function makeBlue(){
+        document.body.style.backgroundColor='blue';
+       }; 
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegata</title>
+</head>
+
+<body>
+    <h1>Explore Event delegate</h1>
+    <section>
+        <ul id="list-container">
+            <li class="item">Shefat bapari</li>
+            <li class="item">Jonayat.</li>
+            <li class="item">Maria........</li>
+            <li class="item">Jobayar</li>
+            <li class="item">Abdul</li>
+            <li class="item">Safia.........</li>
+        </ul>
+        <button id="add-new-item-btn">Add new item to kill</button>
+    </section>
+
+
+    <script>
+        // const items = document.getElementsByClassName('item');
+        // for (const item of items) {
+        //    // item.addEventListener('click', function () {
+            //     console.log(item.innerText);
+            //     console.log(event.target.innerText);
+            //     console.log(event.target.parentNode);
+
+            //     // event.target.parentNode.removeChild(event.target);
+            //     event.target.parentNode.removeChild(item);
+        //     })
+        // }
+
+
+            document.getElementById ('list-container').addEventListener('click', function(event){
+                event.target.parentNode.removeChild(event.target);
+                console.log(event.target);
+                console.log(event.target.innerText);
+            })
+          // add new item
+          document.getElementById('add-new-item-btn').addEventListener('click', function(){
+            const listContainer = document.getElementById('list-container');
+
+            const li = document.createElement('li');
+            li.innerText = 'New item added';
+            li.classList.add('item')
+            listContainer.appendChild(li);
+            
+        })
+    </script>
+
+</html>

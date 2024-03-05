@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional bap ar bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl">Functional bap ka bank</h1>
+    </header>
+    <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 w-3/2 mx-autu">
+            <div class="bg-yellow-400 p-8">
+                <h2 class="text-2xl">Deposit</h2>
+                <h4>$<span id="deposit-total">00</span></h4>
+            </div>
+            <div class="bg-yellow-400 p-8">
+                <h2 class="text-2xl">withdraw</h2>
+                <h4><span id="withdrow-total">00</span></h4>
+            </div>
+            <div class="bg-yellow-400 p-8">
+                <h2 class="text-2xl">balance</h2>
+                <h4><span id="balance-total">1200</span></h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- d and w sec -->
+    <section class="mt-8">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-violet-400 p-8">
+                <h3 class="text-3xl">YOur Deposit</h3>
+                <input id="deposit-field" type="number" placeholder="enter amount">
+                <button id="deposit-btn" class="btn btn-active btn-neutral">Deposit</button>
+            </div>
+            <div class="bg-violet-400 p-8">
+                <h3 class="text-3xl">YOur withdraw</h3>
+                <input id="wedthdrow-field" type="number" placeholder="enter amount">
+                <button id="btn-withdraw"  class="btn btn-active btn-neutral">withdraw</button>
+            </div>
+        </div>
+    </section>
+    <!-- js -->
+    <script src="utliti.js"></script>
+    <script src="deposit.js"></script>
+    <script src="wedthdrow.js"></script>
+</body>
+</html>
